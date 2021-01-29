@@ -1,0 +1,10 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+}
+.navbar {
+  display: flex;
+  /* position: fixed; */
+  flex-direction: column;
+}
