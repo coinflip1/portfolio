@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import './NavBar.css';
-
-
+import thumb from '../thumb.png'
+import spotify from '../spotify.png'
 const NavBar=()=> {
     
   const [navbar,setNavbar]=useState(false);
@@ -24,11 +24,11 @@ const NavBar=()=> {
         <div className='container' id='contid' >
             <nav className={navbar ? "navbar active" : "navbar"}>
                 <a  href='#'>
-                    <img className={navbar ? 'nav__img active' : 'nav__img'} src='https://codesign.com.bd/conversations/content/images/2020/03/Sprint-logo-design-Codesign-agency.png'/> 
+                    <img className={navbar ? 'nav__img active' : 'nav__img'} src='https://static.dezeen.com/uploads/2019/04/ikea-logo-new-hero-1.jpg'/> 
                     </a>
 <ul>
-    <li><a href='#home'>Home</a></li>
-    <li><a href='#about'>About</a></li>
+    <li><a onClick={()=>{window.scrollTo({top:0,behavior:"smooth"})}} style={{cursor:"pointer"}}  >Home</a></li>
+    <li><a onClick={()=>{window.scrollTo({top:550,behavior:"smooth"})}} style={{cursor:"pointer"}}>About</a></li>
     <li><a href='#projects'>Projects</a></li>
     <li><a href='#skills'>Skills</a></li>
     <li><a href='#tools'>Tools</a></li>
@@ -38,7 +38,7 @@ const NavBar=()=> {
 
         <section id='home'>
             <h1>home of site</h1>
-            <p>lorem15lorem15lorem15lorem15lorem15lorem15lorem15lorem15</p>
+            <p>enter text here</p>
         </section>
         <section id='about'>
             <h1>about</h1>
@@ -46,7 +46,12 @@ const NavBar=()=> {
         </section>
          <section id='projects'>
             <h1>project</h1>
-            <p>lorem15lorem15lorem15lorem15lorem15lorem15lorem15lorem15</p>
+             {/* <div className='imgContainer'> */}
+            <a className='image1' href='https://vigorous-fermat-e4a45c.netlify.app/'>
+                <img src={thumb}/></a>
+                <a className='image2' href='https://trusting-boyd-f9491f.netlify.app/'>
+                <img className='spotImg' src={spotify}/></a>
+           {/* </div> */}
         </section>
         <section id='skills'>
             <h1>skills</h1>
@@ -67,7 +72,7 @@ const NavBar=()=> {
     
 }
 
-document.getElementById('home').addEventListener('scroll',()=>console.log(document.scrolly));
+// document.getElementById('home').addEventListener('scroll',()=>console.log(document.scrolly));
 
 
 // var nav= document.querySelector('.navbar');
