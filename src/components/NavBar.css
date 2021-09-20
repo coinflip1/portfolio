@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+/* .name__title {
+  display: flex;
+  position: absolute;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+} */
 .nav__img {
   position: absolute;
   height: 30px;
@@ -40,8 +47,8 @@
 }
 body {
   font-family: Ariel, Helvetica, san-serif;
-  background: black;
-  color: white;
+  background-color: rgb(250, 250, 250);
+  color: black;
   line-height: 1.6;
   height: 100vh;
 }
@@ -54,6 +61,7 @@ body {
   width: 100%;
   height: 60px;
   /* background: transparent; */
+  opacity: 75%;
   background: rgba(0, 0, 0, 0.7);
 }
 .navbar.active {
@@ -62,6 +70,7 @@ body {
     rgb(255, 255, 255) 100%,
     rgb(0, 0, 0) 100%
   );
+  opacity: 100%;
   animation: fadeIn 0.5s;
   /* background: linear-gradient(90deg, rgb(66, 78, 194) 0%, rgb(0, 0, 0) 100%); */
 }
@@ -109,6 +118,7 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* justify-content: center; */
   width: 100%;
   height: 100vh;
   /* scroll-snap-align: center; */
@@ -121,24 +131,79 @@ section p {
   fontsize: 1.5rem;
 }
 section#home {
-  background: url("https://source.unsplash.com/bZZp1PmHI0E/1600x900") no-repeat
-    center center/cover;
+  justify-content: center;
+  object-fit: contain;
+  background: url("https://data.whicdn.com/images/236503568/original.gif")
+    /* repeat fixed 100%; */ no-repeat fixed center center/cover;
+}
+.githubicon {
+  margin: 3px;
+  height: 48px;
+  width: 50px;
+}
+.githubicon:hover {
+  transition: 0.5s ease-in-out;
+  opacity: 0.5;
+  /* filter: grayscale(1); */
+}
+.linkedinicon {
+  margin: 3px;
+  height: 48px;
+  width: 50px;
+}
+.linkedinicon:hover {
+  transition: 0.5s ease-in-out;
+  opacity: 0.5;
+  /* filter: grayscale(1); */
+}
+.emailicon {
+  margin: 3px;
+  height: 48px;
+  width: 50px;
+}
+.emailicon:hover {
+  transition: 0.5s ease-in-out;
+  opacity: 0.5;
+  /* filter: grayscale(1); */
+}
+.twittericon {
+  margin: 3px;
+  height: 48px;
+  width: 50px;
+}
+.twittericon:hover {
+  transition: 0.5s ease-in-out;
+  opacity: 0.5;
+  /* filter: grayscale(1); */
 }
 
 section#about {
-  background: url("https://source.unsplash.com/VRxo0yY-gyM/1600x900") no-repeat
-    center center/cover;
+  /* background: url("https://source.unsplash.com/VRxo0yY-gyM/1600x900") no-repeat
+    center center/cover; */
 }
 
 section#projects {
-  background: url("https://source.unsplash.com/K2tdx2mFDHc/1600x900") no-repeat
-    center center/cover;
+  /* background: url("https://source.unsplash.com/K2tdx2mFDHc/1600x900") no-repeat
+    center center/cover; */
 }
 
 section#contact {
-  background: url("https://source.unsplash.com/2aAHlfDOhJM/1600x900") no-repeat
-    center center/cover;
+  /* background: url("https://source.unsplash.com/2aAHlfDOhJM/1600x900") no-repeat
+    center center/cover; */
 }
 ::-webkit-scrollbar {
   /* display: none; */
+}
+.skill__container {
+  align-items: center;
+  justify-content: center;
+}
+.skill__front {
+  margin-right: 50px;
+}
+.skill__back {
+  margin-right: 50px;
+}
+.mail__text:hover {
+  color: rgb(26, 24, 24);
 }
