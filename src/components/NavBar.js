@@ -33,7 +33,8 @@ const NavBar=()=> {
     return (
         <body>
         <div className='container' id='contid' >
-        <nav className={navbar ? "navbar active" : "navbar active"}>
+        <nav className={"navbar active"}>
+            {/* uncomment below line and comment above line for magic nav scroll bar */}
             {/* <nav className={navbar ? "navbar active" : "navbar"}> */}
                 
                 {/* <a  href='#'>

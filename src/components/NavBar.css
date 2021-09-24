@@ -72,7 +72,7 @@ body {
   height: 60px;
   /* background: transparent; */
   opacity: 75%;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
 }
 .navbar.active {
   background: linear-gradient(
@@ -81,7 +81,8 @@ body {
     rgb(0, 0, 0) 100%
   );
   opacity: 100%;
-  animation: fadeIn 0.5s;
+  /* animation: fadeIn 0.5s; */
+
   /* background: linear-gradient(90deg, rgb(66, 78, 194) 0%, rgb(0, 0, 0) 100%); */
 }
 @keyframes fadeIn {
