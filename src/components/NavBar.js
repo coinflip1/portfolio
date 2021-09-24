@@ -33,7 +33,7 @@ const NavBar=()=> {
     return (
         <body>
         <div className='container' id='contid' >
-        <nav className={navbar ? "navbar" : "navbar"}>
+        <nav className={navbar ? "navbar active" : "navbar active"}>
             {/* <nav className={navbar ? "navbar active" : "navbar"}> */}
                 
                 {/* <a  href='#'>
