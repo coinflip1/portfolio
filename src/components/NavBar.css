@@ -45,6 +45,16 @@
   width: 20px;
   margin: 10px;
 }
+.ecommerceImg {
+  height: 154px;
+  width: 250px;
+}
+.image3 {
+}
+.image3:hover {
+  transform: scale(1.05) !important;
+  object-fit: contain;
+}
 body {
   font-family: Ariel, Helvetica, san-serif;
   background-color: rgb(250, 250, 250);

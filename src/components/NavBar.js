@@ -12,6 +12,7 @@ import nodejslogo from '../nodejslogo.png'
 import firebaselogo from '../firebaselogo.png'
 import css3logo from '../css3logo.png'
 import html5logo from '../html5logo.png'
+import ecommerce from '../ecommerce.png'
 const NavBar=()=> {
     
   const [navbar,setNavbar]=useState(false);
@@ -70,6 +71,9 @@ const NavBar=()=> {
 
                 <a className='image2' href='https://trusting-boyd-f9491f.netlify.app/' style={{margin:'5px'}}>
                 <img className='spotImg' src={spotify}/></a>
+
+                <a className='image3' href='https://friendly-spence-2e0921.netlify.app/' style={{margin:'5px'}}>
+                <img className='ecommerceImg' src={ecommerce}/></a>
                 
            </div>
         </section>
