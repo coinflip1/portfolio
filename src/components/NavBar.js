@@ -33,7 +33,9 @@ const NavBar=()=> {
     return (
         <body>
         <div className='container' id='contid' >
-            <nav className={navbar ? "navbar active" : "navbar"}>
+        <nav className={navbar ? "navbar" : "navbar"}>
+            {/* <nav className={navbar ? "navbar active" : "navbar"}> */}
+                
                 {/* <a  href='#'>
                     <img className={navbar ? 'nav__img active' : 'nav__img'} src='https://static.dezeen.com/uploads/2019/04/ikea-logo-new-hero-1.jpg'/> 
                     </a> */}
