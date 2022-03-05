@@ -33,7 +33,7 @@ const NavBar=()=> {
     return (
         <body>
         <div className='container' id='contid' >
-        <nav className={"navbar active"}>
+        <nav className={navbar ? "navbar active" : "navbar active"}>
             {/* uncomment below line and comment above line for magic nav scroll bar */}
             {/* <nav className={navbar ? "navbar active" : "navbar"}> */}
                 
@@ -120,7 +120,7 @@ const NavBar=()=> {
             <h3>Call Me At</h3>
             <p style={{color:"grey"}}>647-996-8931</p>
             <h3>Email Me At</h3>
-            <a href='mailto:webchrisdev@gmail.com'
+            <a href='mailto:webdevyork@gmail.com'
             
             style={{textDecoration:"none",color:"grey"}}><p className='mail__text'>webchrisdev@gmail.com</p></a>
         </section>
