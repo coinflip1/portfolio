@@ -122,7 +122,7 @@ const NavBar=()=> {
             <h3>Email Me At</h3>
             <a href='mailto:webdevyork@gmail.com'
             
-            style={{textDecoration:"none",color:"grey"}}><p className='mail__text'>webchrisdev@gmail.com</p></a>
+            style={{textDecoration:"none",color:"grey"}}><p className='mail__text'>webdevyork@gmail.com</p></a>
         </section>
         
         </div></body>
